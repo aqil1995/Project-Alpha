@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleURL {
+    string public url;
+
+    constructor(string memory _initialURL) {
+        url = _initialURL;
+    }
+
+    function setURL(string memory _newURL) public {
+        url = _newURL;
+    }
+}
