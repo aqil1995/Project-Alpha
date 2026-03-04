@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleStatus {
+    uint8 public status; // 0 = pending, 1 = active, 2 = closed, etc.
+
+    constructor(uint8 _initialStatus) {
+        status = _initialStatus;
+    }
+
+    function setStatus(uint8 _newStatus) public {
+        status = _newStatus;
+    }
+}
