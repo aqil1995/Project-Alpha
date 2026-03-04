@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleFlag {
+    bool public isActive;
+
+    constructor(bool _initialValue) {
+        isActive = _initialValue;
+    }
+
+    function setActive(bool _value) public {
+        isActive = _value;
+    }
+}
