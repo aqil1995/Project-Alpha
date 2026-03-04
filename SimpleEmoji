@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleEmoji {
+    string public emoji;
+
+    constructor(string memory _initialEmoji) {
+        emoji = _initialEmoji;
+    }
+
+    function changeEmoji(string memory _newEmoji) public {
+        emoji = _newEmoji;
+    }
+}
