@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimplePrice {
+    uint256 public priceInWei;
+
+    constructor(uint256 _initialPrice) {
+        priceInWei = _initialPrice;
+    }
+
+    function setPrice(uint256 _newPrice) public {
+        priceInWei = _newPrice;
+    }
+}
