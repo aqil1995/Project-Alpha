@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleYear {
+    uint16 public year;
+
+    constructor(uint16 _initialYear) {
+        year = _initialYear;
+    }
+
+    function setYear(uint16 _newYear) public {
+        year = _newYear;
+    }
+}
