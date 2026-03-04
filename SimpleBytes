@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleBytes {
+    bytes public data;
+
+    constructor(bytes memory _initialData) {
+        data = _initialData;
+    }
+
+    function setData(bytes memory _newData) public {
+        data = _newData;
+    }
+}
