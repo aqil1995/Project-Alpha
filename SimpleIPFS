@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleIPFS {
+    string public ipfsHash;
+
+    constructor(string memory _initialHash) {
+        ipfsHash = _initialHash;
+    }
+
+    function updateIPFS(string memory _newHash) public {
+        ipfsHash = _newHash;
+    }
+}
