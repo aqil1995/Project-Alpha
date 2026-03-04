@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleTokenSymbol {
+    string public symbol;
+
+    constructor(string memory _initialSymbol) {
+        symbol = _initialSymbol;
+    }
+
+    function setSymbol(string memory _newSymbol) public {
+        symbol = _newSymbol;
+    }
+}
