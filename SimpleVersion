@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleVersion {
+    string public version;
+
+    constructor(string memory _initialVersion) {
+        version = _initialVersion;
+    }
+
+    function updateVersion(string memory _newVersion) public {
+        version = _newVersion;
+    }
+}
