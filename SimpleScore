@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleScore {
+    int256 public score;
+
+    constructor(int256 _initialScore) {
+        score = _initialScore;
+    }
+
+    function setScore(int256 _newScore) public {
+        score = _newScore;
+    }
+}
