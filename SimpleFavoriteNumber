@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleFavoriteNumber {
+    uint256 public favoriteNumber;
+
+    constructor(uint256 _initialNumber) {
+        favoriteNumber = _initialNumber;
+    }
+
+    function setFavoriteNumber(uint256 _newNumber) public {
+        favoriteNumber = _newNumber;
+    }
+}
