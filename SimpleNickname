@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleNickname {
+    string public nickname;
+
+    constructor(string memory _initialNick) {
+        nickname = _initialNick;
+    }
+
+    function changeNickname(string memory _newNick) public {
+        nickname = _newNick;
+    }
+}
