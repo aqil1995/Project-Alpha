@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleTimestamp {
+    uint256 public lastUpdated;
+
+    constructor(uint256 _initialTime) {
+        lastUpdated = _initialTime;
+    }
+
+    function updateTimestamp(uint256 _newTime) public {
+        lastUpdated = _newTime;
+    }
+}
