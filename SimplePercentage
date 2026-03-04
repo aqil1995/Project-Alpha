@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimplePercentage {
+    uint32 public percentage; // 2500 = 25.00%
+
+    constructor(uint32 _initialPercentage) {
+        percentage = _initialPercentage;
+    }
+
+    function setPercentage(uint32 _newPercentage) public {
+        percentage = _newPercentage;
+    }
+}
