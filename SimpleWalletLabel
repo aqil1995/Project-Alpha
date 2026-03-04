@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleWalletLabel {
+    string public walletLabel;
+
+    constructor(string memory _initialLabel) {
+        walletLabel = _initialLabel;
+    }
+
+    function renameWallet(string memory _newLabel) public {
+        walletLabel = _newLabel;
+    }
+}
